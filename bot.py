@@ -14,7 +14,7 @@ while True:
         while True:
             now = datetime.datetime.now()
             hour = now.hour
-            if hour == 22:
+            if hour == 9:
                 sc.chat_postMessage(
                     channel="#example",
                     text=data,
