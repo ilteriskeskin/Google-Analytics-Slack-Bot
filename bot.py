@@ -3,9 +3,6 @@ import slack
 import data
 import time
 
-data = data.start()
-data = str(data)
-
 sc = slack.WebClient('BOT TOKEN')
 
 while True:
@@ -14,6 +11,8 @@ while True:
         while True:
             now = datetime.datetime.now()
             hour = now.hour
+            data = data.start()
+            data = str(data)
             if hour == 9:
                 sc.chat_postMessage(
                     channel="#example",
